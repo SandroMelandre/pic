@@ -1,0 +1,35 @@
+
+
+###  hello word
+GET http://localhost:3000/
+
+###  Participant
+GET http://localhost:3000/participant
+
+### create new participant
+POST http://localhost:3000/participant
+content-type: application/json
+  
+  {
+    "name": "SandroRezende009",
+    "email": "sandromelandre@gmail.com",
+    "phone": "024993032829",
+    "document_type": "CPF",
+    "document_number": "01957346701",
+    "password": "xptop999"
+  }
+
+###
+POST http://localhost:3000/clients
+content-type: application/json
+
+
+   {
+    "name": "sandro",
+    "birth_date": "01/11/1972",
+    "document_type": "cpf",
+    "document_number": 7777777,
+    "email": "sandromelandre@gmail.com",
+    "phone": 2493032929,
+    "password": "xpto"
+  }
