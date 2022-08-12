@@ -1,3 +1,4 @@
+import { Customer } from "../domain/entity/Customer";
 
 export enum Customer_type {
     FISICA,
@@ -11,14 +12,15 @@ describe("customer",()=>{
             name: "sandro",
             last_name: "rezende",
             document_type: "CPF",
-            document_number:"01957346701",
-            customer_type:customer_type.FISICA
+            document_number: '01957346701',
+            customer_type:customer_type.FISICA,
+            password:  '123456'
 
         }
 
         let newCustomer  =  new Customer(customer);
 
-        expect(NewParticipant).toEqual(expect.not.stringMatching(participant.password))
+        expect(newCustomer).toEqual(expect.not.stringMatching(customer.password))
 
 
 
