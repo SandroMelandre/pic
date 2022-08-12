@@ -10,7 +10,7 @@ export class Customer {
     document_type: String
     Document_number: Number
     private password: String
-    customer_type: Customer_type
+    customer_type: String
 
     constructor(customer) {
         this.name = customer.name
