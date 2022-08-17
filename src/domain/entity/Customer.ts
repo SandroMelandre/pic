@@ -20,15 +20,15 @@ export class Customer {
         this.phone = customer.phone
         this.document_type = customer.document_type
         this.document_number = customer.document_number
-        this.password  = this.setPassword(customer.password)
+        this.password = this.setPassword(customer.password)
         this.customer_type = customer.customer_type
     }
     setPassword(password): String {
-        const password_hash = crypto.createHmac('sha256',password).update(password).digest("base64");
-            return password_hash;
+        const password_hash = crypto.createHmac('sha256', password).update(password).digest("base64");
+        return password_hash;
     }
 
-    getPassword():String {
+    getPassword(): String {
         return this.password
     }
 

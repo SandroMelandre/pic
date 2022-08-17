@@ -1,19 +1,15 @@
-import  express =  require('express');
+import express = require('express');
 import { CustomerController } from '../../controllers/customerController';
-const app: express.Application =  express();
+const app: express.Application = express();
 
 app.use(express.json());
 
 
-const port  =process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-// app.use('/',(req, res)=>{
-//     res.send('hello word');
-// })
-
-app.use('/customers',CustomerController);
+app.use('/customers', CustomerController);
 
 
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log(`listen at: http://localhost:${port}`);
 })

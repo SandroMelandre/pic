@@ -2,8 +2,6 @@
 import { Customer } from "../domain/entity/Customer";
 import { CustomerRepositoryInterface } from "../domain/entity/CustomerRepositoryInterface";
 import { CustomerInput } from "../domain/entity/types/CustumerInput";
-import { Customer_type } from "../__test__/customer.spec";
-
 
 interface output {
     customerId?: Number

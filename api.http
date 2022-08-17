@@ -1,7 +1,6 @@
 ### all Customers
 GET http://localhost:3000/customers
 
-
 ### one custumer
 GET http://localhost:3000/customers/1
 
@@ -19,17 +18,3 @@ content-type: application/json
     "customer_type": "FISICA"
   }
 
-###
-POST http://localhost:3000/clients
-content-type: application/json
-
-
-   {
-    "name": "sandro",
-    "birth_date": "01/11/1972",
-    "document_type": "cpf",
-    "document_number": 7777777,
-    "email": "sandromelandre@gmail.com",
-    "phone": 2493032929,
-    "password": "xpto"
-  }
