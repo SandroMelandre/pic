@@ -4,22 +4,24 @@ const crypto = require("crypto");
 
 export class Customer {
     customerId?: Number
-    name: String
-    last_name:String
+    customer_name: String
+    //last_name:String
     email: String
+    phone: String
     document_type: String
-    Document_number: Number
+    document_number: Number
     private password: String
-    customer_type: String
+    customer_type: Customer_type
 
     constructor(customer) {
-        this.name = customer.name
-        this.last_name =customer.last_name
+        this.customer_name = customer.customer_name
+        //this.last_name =customer.last_name
         this.email = customer.email
+        this.phone = customer.phone
         this.document_type = customer.document_type
-        this.Document_number = customer.document_number
+        this.document_number = customer.document_number
         this.password  = this.setPassword(customer.password)
-        this.customer_type = this.customer_type
+        this.customer_type = customer.customer_type
     }
     setPassword(password): String {
         const password_hash = crypto.createHmac('sha256',password).update(password).digest("base64");

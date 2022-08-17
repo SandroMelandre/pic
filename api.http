@@ -1,22 +1,22 @@
+### all Customers
+GET http://localhost:3000/customers
 
 
-###  hello word
-GET http://localhost:3000/
+### one custumer
+GET http://localhost:3000/customers/1
 
-###  Participant
-GET http://localhost:3000/participant
-
-### create new participant
-POST http://localhost:3000/participant
+### create new customer
+POST http://localhost:3000/customers
 content-type: application/json
   
   {
-    "name": "SandroRezende009",
+    "customer_name": "SandroRezende009",
     "email": "sandromelandre@gmail.com",
     "phone": "024993032829",
     "document_type": "CPF",
     "document_number": "01957346701",
-    "password": "xptop999"
+    "password": "xptop999",
+    "customer_type": "FISICA"
   }
 
 ###
